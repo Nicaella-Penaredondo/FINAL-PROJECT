@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#E1BEE7">
+
+    <!-- History/Previous calculation -->
+    <TextView
+        android:id="@+id/tvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="end"
+        android:padding="12dp"
+        android:textColor="#666666"
+        android:layout_marginTop="8dp"
+        android:minHeight="40dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <!-- Display -->
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/display_background"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/tvDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="56sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical|end"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="#000000"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Row 1: clr, DEL, %, / -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:id="@+id/btnClear" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="clr" android:layout_margin="4dp" android:textSize="18sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnDelete" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="DEL" android:layout_margin="4dp" android:textSize="18sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnModulo" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="%" android:layout_margin="4dp" android:textSize="24sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnDivide" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="/" android:layout_margin="4dp" android:textSize="28sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Row 2: 7, 8, 9, * -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/btn7" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="7" android:layout_margin="4dp" android:textSize="28sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btn8" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="8" android:layout_margin="4dp" android:textSize="28sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btn9" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="9" android:layout_margin="4dp" android:textSize="28sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnMultiply" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="*" android:layout_margin="4dp" android:textSize="28sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Row 3: 4, 5, 6, - -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/btn4" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="4" android:layout_margin="4dp" android:textSize="28sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btn5" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="5" android:layout_margin="4dp" android:textSize="28sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btn6" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="6" android:layout_margin="4dp" android:textSize="28sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnSubtract" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="-" android:layout_margin="4dp" android:textSize="32sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Row 4: 1, 2, 3, + -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/btn1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="1" android:layout_margin="4dp" android:textSize="28sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btn2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="2" android:layout_margin="4dp" android:textSize="28sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btn3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="3" android:layout_margin="4dp" android:textSize="28sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAdd" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="+" android:layout_margin="4dp" android:textSize="32sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Row 5: 0, ., = -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/btn0" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="0" android:layout_margin="4dp" android:textSize="28sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnDecimal" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="." android:layout_margin="4dp" android:textSize="32sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnEquals" android:layout_width="0dp" android:layout_weight="2" android:layout_height="75dp" android:text="=" android:layout_margin="4dp" android:backgroundTint="#F8BBD0" android:textSize="32sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Footer text to fill space -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Simple Calculator"
+        android:textSize="16sp"
+        android:textColor="#8E24AA"
+        android:gravity="center"
+        android:alpha="0.6"/>
+
+</LinearLayout>
