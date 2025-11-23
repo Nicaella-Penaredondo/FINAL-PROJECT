@@ -51,12 +51,12 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <!-- Row 1: clr, DEL, %, / -->
+    <!-- Row 1: CLR, DEL, %, / -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <Button android:id="@+id/btnClear" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="clr" android:layout_margin="4dp" android:textSize="18sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnClear" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="CLR" android:layout_margin="4dp" android:textSize="18sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
         <Button android:id="@+id/btnDelete" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="DEL" android:layout_margin="4dp" android:textSize="18sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
         <Button android:id="@+id/btnModulo" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="%" android:layout_margin="4dp" android:textSize="24sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
         <Button android:id="@+id/btnDivide" android:layout_width="0dp" android:layout_weight="1" android:layout_height="75dp" android:text="/" android:layout_margin="4dp" android:textSize="28sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
